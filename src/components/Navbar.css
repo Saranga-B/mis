@@ -1,0 +1,102 @@
+*,*::after,*::before{
+    margin:0;
+    box-sizing:border-box
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    bottom: 10s0px;
+}
+li{
+    list-style: none;
+}a{
+    text-decoration:none;
+    color:#7A0505;
+}
+.nav{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    height: 12vh;
+    background: #F4EAEA;
+    opacity: 80%;
+    padding-right:0px;
+    padding-left: 0px;
+    justify-content:flex-start;
+    gap: 1%;
+
+}
+.brand1{
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;    
+    color: black;
+    padding-left: 0px;
+    display: flex;
+}
+.brand{
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;    
+    padding-left: -20px;
+    padding-top: 4px;
+    display: flex;
+    
+}
+.nav__menu{
+    padding-right:0px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7rem;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+.logo{
+    width: auto;
+    height: 10vh;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+.nav.part{
+    left: 0px;
+    padding-top: 14px;
+}
+
+.nav__toggler{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #F4EAEA;
+}
+.nav__toggler{
+   cursor: pointer;
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__toggler{
+        display: block;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 10;
+        height: 100vh;
+        background: #F4EAEA;
+        flex-direction: column;
+        transform: translateX(100%);
+
+    }
+}
+
